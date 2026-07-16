@@ -4,7 +4,7 @@ interface BracketRowProps {
 
 const BracketRow = ({ tag }: BracketRowProps) => {
   return (
-    <div className="flex flex-row gap-2">
+    <div className="flex flex-row gap-2 font-mono text-[11px] tracking-widder">
       <span className="text-soft">[{tag}]</span>
     </div>
   );

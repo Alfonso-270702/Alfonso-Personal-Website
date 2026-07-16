@@ -5,24 +5,28 @@ import ManifestedRow from "./ManifestRow";
 const Experience = () => {
   return (
     <section className="flex flex-col mb-20">
-      <SectionHeader label="§ 02 • EXPERIENCE" meta="MANIFEST • 02 ENTRIES" />
+      <SectionHeader label="§ 02 · EXPERIENCE" meta="MANIFEST · 02 ENTRIES" />
       {experience.map((exp, index) => (
         <div
           key={index}
-          className="flex flex-row gap-2 border-b border-rule-soft py-7"
+          className="flex flex-col gap-3 md:flex-row md:gap-6 border-b border-rule-soft py-7"
         >
-          <div className="w-[30%] flex items-center">
+          <div className="w-full md:w-32 shrink-0 flex items-start">
             <ManifestedRow
               trackingNumber={exp.id}
               year={exp.year}
               status={exp.status.toUpperCase()}
             />
           </div>
-          <div className="flex flex-col gap-1 w-[70%]">
-            <h3 className="text-3xl font-bold">{exp.title}</h3>
-            <p className="text-[16px]">{exp.role}</p>
-            <p className="text-[12px] text-soft">{exp.stack}</p>
-            <p className="text-[16px]">{exp.impact}</p>
+          <div className="flex flex-col gap-2 flex-1">
+            <h3 className="text-[22px] font-bold tracking-[-0.02em] leading-tight">
+              {exp.title}
+            </h3>
+            <p className="text-[13px]">{exp.role}</p>
+            <p className="font-mono text-[11px] text-muted">{exp.stack}</p>
+            <p className="font-mono text-[11px] font-medium text-ink">
+              {exp.impact}
+            </p>
           </div>
         </div>
       ))}

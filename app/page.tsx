@@ -8,6 +8,7 @@ import Stack from "./components/Stack";
 
 export default function Home() {
   return (
+    // <main className="mx-auto c px-8 flex flex-col">
     <main className="mx-auto max-w-250 px-8 flex flex-col">
       <Hero />
       <About />
