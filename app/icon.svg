@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#E9E5D9"/>
+  <text
+    x="16"
+    y="23"
+    font-family="'Inter', system-ui, sans-serif"
+    font-size="16"
+    font-weight="800"
+    letter-spacing="-0.5"
+    fill="#12141A"
+    text-anchor="middle"
+  >AS</text>
+</svg>

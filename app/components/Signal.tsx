@@ -1,3 +1,5 @@
+"use client";
+
 import SectionHeader from "./SectionHeader";
 import { signal } from "../data/signal";
 import BracketRow from "./BracketRow";
@@ -37,7 +39,12 @@ const Signal = () => {
               <p className="text-[14px]">{sig.value}</p>
             )}
             {sig.href && (
-              <span className="font-mono text-[12px] text-muted">↗</span>
+              <span
+                className="font-mono text-[12px] text-muted cursor-pointer"
+                onClick={() => window.location.assign(sig.href)}
+              >
+                ↗
+              </span>
             )}
           </div>
         </div>
